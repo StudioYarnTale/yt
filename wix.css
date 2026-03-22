@@ -1,0 +1,753 @@
+@media (max-width: 768px) {
+ body {    font-size: 14pt;  }
+.content,
+.banner img,
+.button-menu,
+nav {    width: 100%;    max-width: 100%;  }
+.content {    padding: 10px 15px;  }
+.content h1 {    font-size: 20pt;  }
+.content h2 {    font-size: 17pt;  }
+.content h3 {    font-size: 14pt;  }
+.button-menu {    flex-wrap: wrap;    gap: 8px;    height: auto;  }
+.button-menu a {    width: auto;    padding: 6px 12px;    font-size: 11pt;  }
+img {  max-width: 100%;    height: auto;  }
+}
+
+
+
+ 
+ body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdfaf5;
+      background-color: #fffff0;
+      background-color: #F9E6D0;
+        /*background: linear-gradient(to bottom, #ffffff, #fbeff5); /* белый → магнолия */
+        /*background: linear-gradient(to bottom,#F9E6D0, #ffffff);*/
+      background-color: #FFFFFF;
+      font-family: "Comic Sans MS", "calibri","Arial", "Garamond";
+      text-align: justify;
+      font-size: 12pt;
+      color: #663300;
+	  line-height: 1.5;
+    }
+	.top-header {
+		position: sticky;        /* Вот он, наш магнит! */
+		top: 0;                  /* Прилипать ровно к верхнему краю */
+		z-index: 1000;           /* Чтобы меню всегда было ПОВЕРХ остального контента */
+		background-color: #FFFFFF; /* Обязательно задай фон, иначе текст будет просвечивать под меню */
+		width: 100%;             /* Растягиваем на всю ширину */
+		box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Легкая тень, чтобы отделить от текста при прокрутке */
+		text-align: center;
+	}
+	
+	
+.lang-switch {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 10px;   /* можно 14–18, под кружево */
+}
+
+.lang-switch a {  text-decoration: none; margin-left: 6px; color: #cc3300;}
+a.lang-switch:hover   { color: #ff00ff; }
+a.lang-switch:visited { color: #660000; }
+a.lang-switch:active  { color: #660000; }
+
+    .banner {
+      max-width: 900px;
+      width: 100%;
+      width: 900px;
+      max-height: 300px;
+      height: auto;
+     /*background-color: #fff0f0;*/
+      background-color: #ffffff;
+      background: url('webimg/logoen.jpg') center/cover no-repeat;
+      background-image: url('webimg/logoenX.jpg'); /* замени на путь к твоему баннеру */
+      background-size: cover;
+      background-position: center;
+      padding: 0px 0px;
+      text-align: center;
+      color: #fffcfc;
+    }
+
+    .banner h1{
+      width: 900px;
+      margin: 0 auto;
+      font-size: 15 pt;
+      text-shadow: 2px 2px 4px #000;
+      text-align: center;
+      color: #F27805;
+    }
+
+    .banner img {
+	  text-align: center;
+      width: 900px;
+      margin: 0 0;
+      padding: 0 0;
+    }
+
+.main-container {
+    width: 900px;
+    display: flex;         /* Главная магия: выстраивает детей в ряд */
+    margin: 0 auto;        /* Центрирует весь сайт на экране */
+    align-items: flex-start; /* Чтобы колонки не растягивались по высоте зря */
+}
+
+.column-right {
+      width: 560px;
+      flex-shrink: 0;        /* Запрещаем колонке сжиматься */
+      box-sizing: border-box; /* Чтобы отступы (padding) не раздували ширину */
+	  font-family: "Comic Sans MS", "calibri","Arial", "Garamond";  
+      background-color:  #ffffff;
+      margin: 0px auto;
+      font-size: 12pt;
+      line-height: 1.5;
+      padding: 10px;
+      text-align: justify;
+      color: #993300;
+}
+
+.column-left {
+      width: 280px;
+      flex-shrink: 0;        /* Запрещаем колонке сжиматься */
+      box-sizing: border-box;
+      background-color:  #FFFCF7;		  
+	  border: 1px solid #f29933;   
+      margin: 30px auto;
+      padding: 20px 10px;		  
+	  font-family: "Comic Sans MS", "calibri","Arial", "Garamond";  
+      font-size: 9pt;
+      line-height: 1.3;
+      text-align: left;
+	  font-weight: none;
+      color: #993300;
+}
+
+    .content {
+	  font-family: "Comic Sans MS", "calibri","Arial", "Garamond";  
+      background-color:  #ffffff;
+      max-width: 900px;
+      width: 900px;
+      margin: 0px auto;
+      font-size: 12pt;
+      line-height: 1;
+      padding: 10px 10px;
+      text-align: justify;
+      color: #660000;
+    }
+	
+	.content p {
+      font-size: 12pt;
+      line-height: 1.5;
+      text-align: justify;
+      color: #660000;
+	  text-indent: 2em; 
+	  margin-bottom: 1.2em;
+    }
+
+    .content h1 {
+      font-size: 22pt;
+      width: 900px;
+      text-align: center;
+      line-height: 1.5;
+      color: #F27805;      
+    }
+
+    .content h2 {
+      font-size: 18pt;
+	  font-weight: bold;
+      width: 900px;
+      text-align: center;
+      line-height: 1;
+      color: #F27805; 
+    }
+
+    .content h3 {
+      font-size: 14pt;
+	  font-weight: bold;
+      width: 900px;
+      text-align: center;
+      line-height: 1;
+      color: #cc3300;
+    }
+	
+	.content h4 {
+      font-size: 22pt;
+      width: 900px;
+      text-align: center;
+      line-height: 1.5;
+      color: #990000;
+	  text-indent: 0; 
+	  margin-bottom: 0;
+	  font-weight: bold;
+    }
+	
+.content h6 {
+	  font-size: 26pt;
+	  font-weight: bold;
+	  color: #cc3300; 
+      width: 900px;
+      text-align: center;
+      line-height: 1;
+	  margin-top:0px; 
+	  margin-bottom:0px; 
+	  padding:0;
+}
+
+    .content a {
+      color: #993300;
+	  font-weight: bold;
+	  text-decoration: none;
+    }
+    .content a:hover{color: #ff3300;}
+	.content a:active{color: #993300;}
+	.content a:visited{color: #993300;}
+
+    .content img {
+	  display: inline-block;   /* Позволяет стоять в строке с текстом */
+	  vertical-align: middle;  /* Выравнивает иконку по центру высоты букв */
+	  vertical-align: baseline;    /* Выравнивание по нижней границе текста */
+    }
+
+
+.symbol {
+    width: 300px;
+	margin: 10px auto;   /* ← ВОТ ЭТО центрирует блок */
+	padding: 0;
+    display: flex;              /* ← магия начинается */
+    justify-content: center;    /* центр по горизонтали */
+    align-items: center;        /* центр по вертикали */
+    gap: 30px;                  /* расстояние между DC и значком */
+	border: 1px solid #F27805;
+}
+
+.symbol h5 {
+    font-family: Arial;
+    font-size: 60px;            /* можно регулировать */
+    color: #000;
+    margin: 0;    padding: 0;
+	border:0;
+	}
+/* символ стежка */
+.symbol img {
+    width: 100px;               /* можно регулировать */
+    height: 100px;
+    display: block;             /* убираем baseline картинок */
+	margin: 0;    padding: 0;
+	border:0;
+}  
+    
+	
+
+
+	    .tbl-img {
+      margin: 0px;
+      padding: 0px;
+      width: 150px;
+      height: 150px;
+      border:0;
+    } 
+
+	
+    .content table {
+      background: #FFF0F0;
+      padding: 0;
+      margin: 0;
+      border-collapse: collapse;
+      border: 1px solid #FFdddd;
+      width: 900px;
+    }
+
+
+.content table tr {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ffcccc;
+}
+
+.content table td {
+  font-size: 1em;
+  line-height: 1.3em;
+  text-align: center;
+  color: #993333;
+  margin: 0;
+  padding: 6px;
+  background: #ffffff;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+      
+    .abr {font-size: 2em; color: #663333; }
+	
+	.image-row { width: 900px; display: flex; justify-content: space-between; gap: 10px; } 
+   	.image-row p {text-align: justify; font-size: 12px; color: #990000;}
+	  
+	  
+	  
+	  
+	  
+	  
+    .image-row0 { margin-left:200px; width: 500px; text-align: justify; font-size: 9px;}
+    .image-row1 { width: 900px; text-align: justify; font-size: 9px;}
+    .image-row2 {  
+      width: 900px;
+      display: flex; 
+	  justify-content: space-between; 
+      gap: 30px;
+      text-align: justify;
+	  font-size: 9px;
+	  color: #ff0000;
+      }
+    
+    .image-row3 {
+	  width: 900px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      text-align: justify;
+	  font-size: 9px;
+    }
+    .image-row3s {
+	  width: 900px;
+      display: flex;
+      justify-content: space-between;
+      gap: 45px;
+      margin-top: 0px;
+      text-align: justify;
+    }
+    .image-row4 {
+	  width: 900px;
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      
+      text-align: left;
+      font-size: 0.8em;
+      line-height: 1.1em;
+      color: #333333;
+	  text-align: justify;
+    }
+
+    .img0 {
+      width: 500px;
+      margin-top: 10px;
+      border: 1px solid #ffcccc;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(70, 0, 0, 0.05);
+	  display: block;        /* ← делаем блочным элементом */
+      margin: 20px auto;     /* ← центрируем по горизонтали */
+    }
+    .img1 {
+      width: 900px;
+      margin-top: 10px;
+      border: 1px solid #ffcccc;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(70, 0, 0, 0.05);
+    }
+    .img2 {
+      width: 430px;
+      margin-top: 10px;
+      border: 1px solid #ffcccc;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(70, 0, 0, 0.05);
+    }
+    .img3 {
+      width: 290px;
+      margin-top: 10px;
+      border: 1px solid #ffcccc;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(70, 0, 0, 0.05);
+    }
+   .img3s {
+      width: 270px;
+      margin-top: 10px;
+      border: 1px solid #ffcccc;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(70, 0, 0, 0.05);
+    }
+   .img4 {
+      width: 220px;
+      margin-top: 10px;
+      border: 1px solid #ffcccc;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(70, 0, 0, 0.05);
+    }
+    .img01 {
+      width: 70px;
+      margin: 0px;
+      padding: 0ps;
+    }
+
+.img_les4 {
+	width: 800px; 
+	border:0;  
+	box-shadow:0 0 0 #fff;
+	}
+
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 10pt;
+      background-color: #F27805;
+      color: #ffffff;
+    }
+
+    /* Контейнер для всего меню */
+	nav {
+    width: 900px;            /* Твой заданный размер */
+    margin: auto auto;       /* Центрируем на странице */
+    padding: 0px 0px;
+    display: flex;           /* Выстраиваем пункты в ряд */
+    justify-content: space-around; /* Равномерное расстояние между ссылками */
+    align-items: center;
+  /*background-color: #FFF5EB;         /* Очень нежный кремовый фон */
+  /*border-radius: 10px;               /* Скругленные уголки */
+	}
+
+	.button-menu {
+    display: flex;               /* Выстраиваем в ряд */
+    justify-content: center;     /* Центрируем кнопки внутри 900px */
+    gap: 12px;                   /* Расстояние между кнопками */
+    width: 900px; 				/* Твоя ширина */
+	height:40px;
+    margin: 5px auto;           /* Центрируем всё меню на странице */
+    padding: 5px 0;
+	}
+
+	.button-menu a {
+    display: inline-block;
+    padding: 5px 5px;          /* Делаем кнопки "пухленькими" */
+    background-color: #FEEFE2; /* Твой теплый оранжевый #FFDAB9;  */
+    color: #CA1414;              /* Белый текст */
+    text-decoration: none;       /* Убираем подчеркивание */
+    border-radius: 20px;         /* Скругляем, как бока клубочка */
+    font-family: "Comic Sans MS", cursive;
+    /*font-weight: bold;*/
+    font-size: 12pt;
+    box-shadow: 2px 3px 6px rgba(102, 51, 0, 0.2); /* Мягкая тень */
+    transition: all 0.3s ease;   /* Чтобы всё менялось плавно */
+    white-space: nowrap;         /* Чтобы текст не перепрыгивал на новую строку */
+    width:145px;
+	border-top: 1px solid #F36600;    /* Верхняя "ниточка" */
+	border-bottom: 1px solid #F36600; /* Нижняя "ниточка" */
+	}
+
+   /* Эффект при наведении курсора */
+	.button-menu a:hover {
+	background-color: #F27805;    /* Легкий персиковый блик   */
+    color: #FFFFFF;               /* Цвет меняется на красный, как в заголовках */
+    transform: translateY(-2px); /* Кнопка чуть приподнимается */
+    box-shadow: 2px 5px 10px rgba(102, 51, 0, 0.3);
+	}
+
+	/* Стиль для активной кнопки */
+	/* Чтобы при наведении на активную кнопку она не прыгала */
+	.button-menu a.active:hover {
+    transform: none;
+    background-color: #D36804;
+	}
+	.button-menu a:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Внутренняя тень, эффект нажатия */
+    cursor: default;             /* Убираем "пальчик", так как мы уже здесь */
+    border: 1px solid #663300;   /* Тонкая коричневая кайма для четкости */
+	color: #ffffff;                    /* Цвет меняется на красный, как в заголовках */
+    background-color: #d36600;   /* Темно-оранжевый (темнее твоего основного) */
+	}
+
+	/* Специальный класс для иконок внутри текста */
+	.icon-img {
+    display: inline-block;   /* Позволяет стоять в строке с текстом */
+    vertical-align: middle;  /* Выравнивает иконку по центру высоты букв */
+    width: 24px;             /* Размер чуть больше шрифта, чтобы было видно */
+    height: auto;
+    margin-left: 5px;        /* Небольшой отступ от слова слева */
+    margin-right: 5px;       /* Отступ от следующего слова справа */
+    border: none;
+    transition: transform 0.2s; /* Эффект при наведении */
+	}
+
+	.icon-img:hover {
+    transform: scale(1.3);   /* Иконка чуть увеличится при наведении */
+	}
+
+	/* Убираем лишние подчеркивания у ссылок-иконок */
+	.inline-link {
+    text-decoration: none;
+    border: none;
+	}
+	/* Специфические стили для школы */
+	
+	
+/* ===== Characters Gallery Table ===== */
+
+table.characters {
+    width: 900px;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: separate;
+	border: 2px solid #ffffff;
+    border-spacing: 0;   /* ← ВОТ ЭТО ГЛАВНОЕ */
+    table-layout: fixed;
+	background:#ffffff;
+}
+
+/* общие ячейки */
+table.characters td {
+    width: 450px;
+    max-width: 450px;
+    vertical-align: top;
+	border:0;
+    box-sizing: border-box; /* чтобы padding не расширял */
+}
+
+/* ячейка с текстом */
+table.characters td.char-text {
+    background-color: #FFFCF7;
+    border: 1px solid #f29933;
+    padding: 20px;
+    text-align: justify;
+    color: #996633;
+}
+
+
+/* УБИРАЕМ РАМКУ У ЯЧЕЙКИ С КАРТИНКОЙ */
+table.characters td.char-img {
+    border: none;
+    background: #ffffff;   /* чисто белый фон под игрушкой */
+    padding: 20px;
+}
+
+/* РАМКА ТОЛЬКО У ТЕКСТА */
+table.characters td.char-text {
+    border: 1px solid #f29933;
+    background-color: #FFFCF7;
+} 
+
+/* заголовок персонажа */
+table.characters td.char-text h3 {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #cc3300;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+table.characters td.char-text p {
+    font-size: 10pt;
+    line-height: 1.55;
+    margin: 6px 0 0 0;
+}
+
+
+/* ячейка с изображением */
+table.characters td.char-img {
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* изображения в галерее*/
+table.characters td.char-img img {
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+	td.char-img {
+  text-align: center;
+  vertical-align: middle; /* если вдруг захочешь по вертикали */
+}
+	
+	
+	
+	
+	
+/* questions young reader*/
+div.drawpic{
+  position:relative;
+  background-color:#FFF8EE;
+  border:1px solid #F4B183;
+  border-radius:24px;
+  padding:36px 36px 32px 36px;
+  margin:40px auto;
+  max-width:850px;
+  font-size:15.5pt;
+  line-height:1.6;
+  color:#E46A00;
+}
+/* decorative image*/
+img.drawpic{
+    position:absolute;
+    top:-22px;
+    right:-22px;
+    width:150px;
+    height:auto;
+    z-index:2;
+}
+
+a.top{
+  scroll-margin-top: 250px; 
+  font-size: 10pt;
+  color: #ff9966;
+}
+a.top:visited { color: #ff9966; }
+a.top:hover   { color: #cc0000; }
+a.top:active  { color: #ff6633; }
+
+
+a.chapter{
+	scroll-margin-top: 250px; 
+	font-size: 11pt;
+	color: #990000; /* или твой любимый */
+	text-decoration: none;
+}
+a.chapter:hover   { color: #cc0000; }
+a.chapter:visited { color: #990000; } 
+a.chapter:active  { color: #660000; }
+
+a.lesson{
+	scroll-margin-top: 250px; 
+	font-size: 10pt;
+	color: #990000; /* или твой любимый */
+	text-decoration: none;
+}
+a.lesson:hover   { color: #cc0000; }
+a.lesson:visited { color: #990000; } 
+a.lesson:active  { color: #990000; }
+
+
+
+/* Стиль для секретов мастера и важных цитат */
+blockquote {
+    background-color: #FFF8EE; /* Очень мягкий бежевый, как у тебя в div.drawpic */
+    border-left: 5px solid #F27805; /* Твой фирменный оранжевый акцент слева */
+    border-top: 1px solid #F4B183;
+    border-right: 1px solid #F4B183;
+    border-bottom: 1px solid #F4B183;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    max-width: 800px;
+    font-style: italic;
+    color: #E46A00; /* Темно-оранжевый для текста */
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(242, 120, 5, 0.1); /* Легкая оранжевая тень */
+}
+
+/* Добавим маленькую декоративную деталь перед текстом */
+blockquote b::before {
+    content: "💡"; /* Иконка лампочки или можно поставить 🦉 */
+    margin-right: 10px;
+    font-style: normal;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    blockquote {
+        margin: 20px 10px;
+        padding: 15px;
+        font-size: 13pt;
+    }
+	
+.content img:hover {
+  transform: scale(1.02); /* Увеличивает картинку на 5% */
+  cursor: zoom-in; /* Меняет курсор на лупу, показывая, что картинку можно рассмотреть */
+}
+
+
+
+
+
+
+/* ФИНАЛЬНЫЙ СТИЛЬ ДЛЯ ТАБЛИЦЫ СИМВОЛОВ */
+
+.content table.symtb,
+.content table.symtb tr,
+.content table.symtb td {
+    background-color: #ffffff;
+}
+
+.content table.symtb {
+    width: 900px;
+    border-collapse: collapse;
+    margin: 30px auto;
+    border: 2px solid #F4B183;
+    box-shadow: none;
+}
+
+/* Заголовок */
+.content table.symtb th {
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 20pt;
+    color: #F27805;
+    border-bottom: 2px solid #F4B183;
+}
+
+/* Общий стиль ячеек */
+.content table.symtb td {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+/* Названия */
+.content table.symtb td.symtbl4 {
+    width: 200px;
+    font-size: 14pt;
+    color: #333333;
+    text-align: left;
+}
+
+/* Аббревиатуры */
+.content table.symtb td.symtbl3 {
+    width: 80px;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #F27805;
+    text-align: center;
+}
+
+/* Картинки */
+.content table.symtb td.symtbl2 {
+    width: 100px;
+    text-align: center;
+}
+
+/* Вертикальный разделитель */
+.content table.symtb td:nth-child(3) {
+    border-right: 1px solid #F4B183;
+}
+
+/* Картинки */
+.content table.symtb img.symimg {
+    width: 60px;
+    height: auto;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
