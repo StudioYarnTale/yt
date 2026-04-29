@@ -744,10 +744,22 @@ blockquote b::before {
     display: inline-block;
 }
 
+.content img.storypic{
+    display:block;
+    width:700px !important;
+    height:auto;
+    margin:20px auto;
+}
 
-
-
-
+img.storypic{
+    display:block;
+    width:700px;
+    height:auto;
+    margin:20px auto;
+}
+.content img.storypic{
+    border:5px solid red;
+}
 
 
 
